@@ -1,0 +1,151 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "WDXL Lubrifont TC";
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div#img_rule{
+    width: 30%;
+}
+
+div#img_rule img{
+    display: block;
+    width: 100%;
+}
+
+header div#icon {
+    display: none;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+}
+header ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    color: black;
+}
+header ul li a.GFC{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+section.banner{
+    background-color: silver;
+    background-image: url("man.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 75%;
+    height: 500px;
+    display: flex; 
+    align-items: center;
+}
+    
+section.banner div#banner_description{
+    width: 350px;
+    margin-left: 100px;
+}
+
+section.banner div#banner_description h5{
+    color: orangered;
+    text-transform: uppercase;
+}
+
+section.banner div#banner_description h3{
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+section.banner div#banner_description h2{
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+section.banner div#banner_description p{
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+section.banner div#banner_description div#container{
+    display: flex;
+}
+
+section.banner div#banner_description a.anchor1{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+}
+
+section.banner div#banner_description a.anchor2{
+    text-decoration: none;
+    color: black;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: red;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-left: 5px;
+    font-size: 10px;
+    display: block;
+}
+
+/* Edit the structure of a website on mobile view for devices 0 to 450px */
+@media(max-width:450px){
+
+    header{
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    header div#img_rule{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header div#logo img{
+        width: 150px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header div#icon{
+        display: block;
+    }
+
+    main > section.banner{
+    background-size: contain;
+    height: 700px;
+    align-items: center;
+    display: flex;
+}
+
+main > section.banner > div#banner_description{
+    margin: auto;
+    margin-top: 200px;
+}
+}
+
